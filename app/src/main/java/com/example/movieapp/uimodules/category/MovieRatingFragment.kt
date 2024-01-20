@@ -17,15 +17,15 @@ import com.example.movieapp.databinding.FragmentTopRatedMovieListBinding
 import com.example.movieapp.helper.NetworkResponse
 import com.example.movieapp.uimodules.category.adapter.MovieListAdapter
 import com.example.movieapp.utils.Utils
-import com.example.movieapp.viewmodels.TopRatedViewModel
+import com.example.movieapp.viewmodels.MovieRatingViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MovieRatingFragment :
-    BaseFragment<FragmentTopRatedMovieListBinding, TopRatedViewModel>(),
+    BaseFragment<FragmentTopRatedMovieListBinding, MovieRatingViewModel>(),
     CategoryNavigator, View.OnClickListener {
 
-    private val mViewModel: TopRatedViewModel by viewModels()
+    private val mViewModel: MovieRatingViewModel by viewModels()
     private lateinit var mBinding: FragmentTopRatedMovieListBinding
     lateinit var movieListAdapter: MovieListAdapter
 
@@ -114,7 +114,7 @@ class MovieRatingFragment :
         return BR.viewModel
     }
 
-    override fun getViewModel(): TopRatedViewModel {
+    override fun getViewModel(): MovieRatingViewModel {
         return mViewModel
     }
 

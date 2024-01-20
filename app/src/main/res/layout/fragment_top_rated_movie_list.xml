@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.movieapp.viewmodels.TopRatedViewModel" />
+            type="com.example.movieapp.viewmodels.MovieRatingViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

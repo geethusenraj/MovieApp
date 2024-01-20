@@ -18,17 +18,17 @@ import com.example.movieapp.databinding.FragmentMoviesInCategoryBinding
 import com.example.movieapp.helper.NetworkResponse
 import com.example.movieapp.uimodules.MainActivity
 import com.example.movieapp.uimodules.category.adapter.PagerAdapter
-import com.example.movieapp.viewmodels.MoviesInCategoryViewModel
+import com.example.movieapp.viewmodels.CategoryViewModel
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MoviesInCategoryFragment :
-    BaseFragment<FragmentMoviesInCategoryBinding, MoviesInCategoryViewModel>(),
+    BaseFragment<FragmentMoviesInCategoryBinding, CategoryViewModel>(),
     CategoryNavigator {
 
-    private val mViewModel: MoviesInCategoryViewModel by viewModels()
+    private val mViewModel: CategoryViewModel by viewModels()
     private lateinit var mBinding: FragmentMoviesInCategoryBinding
     private var pagerAdapter: PagerAdapter? = null
     private lateinit var mainActivity: MainActivity
@@ -138,7 +138,7 @@ class MoviesInCategoryFragment :
 
     }
 
-    override fun getViewModel(): MoviesInCategoryViewModel {
+    override fun getViewModel(): CategoryViewModel {
         return mViewModel
     }
 

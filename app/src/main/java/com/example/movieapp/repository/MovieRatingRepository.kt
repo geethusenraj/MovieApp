@@ -5,7 +5,7 @@ import com.example.movieapp.helper.NetworkResponse
 import com.example.movieapp.network.ApiRepository
 import javax.inject.Inject
 
-class TopRatedRepository @Inject constructor(private var apiRepository: ApiRepository) {
+class MovieRatingRepository @Inject constructor(private var apiRepository: ApiRepository) {
     suspend fun getCategoriesMovies(categoryId: Int): NetworkResponse<MoviesResponse>? {
 
         val response = apiRepository.getCategoriesMovies(categoryId)

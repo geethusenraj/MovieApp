@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.movieapp.base.BaseViewModel
 import com.example.movieapp.data.api.MoviesResponse
 import com.example.movieapp.helper.NetworkResponse
-import com.example.movieapp.repository.TopRatedRepository
+import com.example.movieapp.repository.MovieRatingRepository
 import com.example.movieapp.uimodules.category.CategoryNavigator
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
@@ -16,7 +16,7 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel
-class TopRatedViewModel @Inject constructor(private var topRatedRepository: TopRatedRepository) :
+class MovieRatingViewModel @Inject constructor(private var topRatedRepository: MovieRatingRepository) :
     BaseViewModel<CategoryNavigator>() {
 
     private val _movieList = MutableLiveData<NetworkResponse<MoviesResponse>?>()

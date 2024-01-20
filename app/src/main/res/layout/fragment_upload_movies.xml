@@ -69,7 +69,7 @@
                     android:layout_marginTop="@dimen/dp_15"
                     android:fontFamily="@font/sans_normal_bold"
                     android:includeFontPadding="true"
-                    android:text="@string/top_rated"
+                    android:text="@string/movie_title"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_15"
                     app:layout_constraintEnd_toEndOf="parent"
