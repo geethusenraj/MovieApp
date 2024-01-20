@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="low_rated">Low Rated</string>
+    <string name="add_movie">Add Movie</string>
+    <string name="adding_to">Adding to</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="description">Description</string>
+    <string name="choose_rating">Choose Rating</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="enter_name_of_movie">Enter name of movie</string>
+    <string name="tell_some_details_about_movie">Tell some details about the movie..</string>
+    <string name="one">1</string>
+
+    <string-array name="ratings">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="options">
+        <item>Take Photo</item>
+        <item>Choose from Gallery</item>
+        <item>Exit</item>
+    </string-array>
+
+
+    <string name="contact_permission_required_title">Permission Required</string>
+    <string name="camera_permission_required">Camera permission is required to capture image.\nKindly provide the permission from Settings.</string>
+    <string name="deny">DENY</string>
+    <string name="allow">ALLOW</string>
+
+
+    <string name="failure_capturing_image_title">Image Capture Failure</string>
+    <string name="failure_capturing_image_message">Something went wrong. Kindly try to capture image again.</string>
+    <string name="ok">OK</string>
+    <string name="error">Something went wrong!</string>
+    <string name="success">Success!</string>
+    <string name="progress_loading_text">loading...</string>
+    <string name="no_content">No content available.</string>
+    <string name="please_fill_all_fields">Please input all fields</string>
+    <string name="no_internet">No internet connectivity</string>
+
+</resources>

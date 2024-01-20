@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/fragment_dashboard">
+
+    <fragment
+        android:id="@+id/fragment_dashboard"
+        android:name="com.example.movieapp.uimodules.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/fragment_movies_in_category"
+        android:name="com.example.movieapp.uimodules.category.MoviesInCategoryFragment"
+        android:label="fragment_movies_in_category"
+        tools:layout="@layout/fragment_movies_in_category">
+        <argument
+            android:name="category_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="category"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_upload_movies"
+        android:name="com.example.movieapp.uimodules.uploadmovies.UploadMoviesFragment"
+        android:label="fragment_upload_movies"
+        tools:layout="@layout/fragment_upload_movies">
+
+    </fragment>
+
+</navigation>
